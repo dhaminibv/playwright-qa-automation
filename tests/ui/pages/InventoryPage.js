@@ -7,7 +7,10 @@ export class InventoryPage {
     this.cartLink = page.locator('[data-test="shopping-cart-link"]');
     this.cartBadge = page.locator('[data-test="shopping-cart-badge"]');
     this.sortDropdown = page.locator('[data-test="product-sort-container"]');
+      
+
   }
+
 
   async expectLoaded() {
     await expect(this.title).toBeVisible();
@@ -20,10 +23,23 @@ export class InventoryPage {
   async addProduct(name) {
     await this.product(name).getByRole('button', { name: /Add to cart/i }).click();
   }
+  async addMultipleProducts(products) {
+  for (const productName of products) {
+    await this.product(productName)
+      .getByRole('button', { name: /Add to cart/i })
+      .click();
+  }
+}
 
   async removeProduct(name) {
     await this.product(name).getByRole('button', { name: /Remove/i }).click();
   }
+  async removeMultipleProduct(products) {
+  for (const productName of products) {
+    await this.page.locator(productName).click()
+  }
+}
+
 
   async sortBy(value) {
     await this.sortDropdown.selectOption(value);

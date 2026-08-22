@@ -75,4 +75,26 @@ test.describe('Sauce Demo - Shopping flow', () => {
 
     expect(numericPrices).toEqual([...numericPrices].sort((a, b) => a - b));
   });
+ test('test multiple product addition to cart and deletion @regression', async ({ page }) => {
+  const inventory = new InventoryPage(page);
+  const cart = new CartPage(page);
+
+  await inventory.addMultipleProducts([
+    'Sauce Labs Backpack',
+    'Sauce Labs Bike Light',
+    'Sauce Labs Bolt T-Shirt'
+  ]);
+
+  await inventory.expectCartCount(3);
+
+  await inventory.openCart();
+
+  await inventory.removeMultipleProduct([
+    '#remove-sauce-labs-bolt-t-shirt',
+    '#remove-sauce-labs-bike-light',
+    '#remove-sauce-labs-backpack'
+  ]);
+
+  await inventory.expectCartCount(0);
+});
 });
