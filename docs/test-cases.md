@@ -10,10 +10,11 @@
 | UI-004 | Remove a product from cart | Medium | Functional | Yes |
 | UI-005 | Complete checkout | Critical | End-to-End | Yes |
 | UI-006 | Sort inventory by price low-to-high | Medium | Functional | Yes |
-| UI-007 | Verify checkout validation for missing required fields | High | Negative | Planned |
-| UI-008 | Verify cart persists after navigating back to inventory | Medium | Regression | Planned |
-| UI-009 | Verify logout removes access to authenticated pages | High | Security/Session | Planned |
-| UI-010 | Verify product details match the selected product | Medium | Functional | Planned |
+| UI-007 | Add and Remove Multiple products in cart | Medium | Functional | Yes |
+| UI-008 | Verify checkout validation for missing required fields | High | Negative | Planned |
+| UI-009 | Verify cart persists after navigating back to inventory | Medium | Regression | Planned |
+| UI-010 | Verify logout removes access to authenticated pages | High | Security/Session | Planned |
+| UI-011 | Verify product details match the selected product | Medium | Functional | Planned |
 
 ## API - Restful Booker
 
