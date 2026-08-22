@@ -23,26 +23,6 @@ A practical **Playwright + JavaScript** automation project demonstrating UI, API
 
 Sauce Labs provides Sauce Demo as a sample application for automated testing.
 
-## Project structure
-
-```text
-.
-├── tests/
-│   ├── api/
-│   │   └── booking.spec.js
-│   └── ui/
-│       ├── pages/
-│       │   ├── LoginPage.js
-│       │   ├── InventoryPage.js
-│       │   ├── CartPage.js
-│       │   └── CheckoutPage.js
-│       └── sauce-demo.spec.js
-├── docs/
-│   └── test-cases.md
-├── playwright.config.js
-├── package.json
-└── README.md
-```
 
 ## Setup
 
@@ -95,24 +75,6 @@ The report is also generated automatically in:
 
 ```text
 playwright-report/
-```
-
-## CI/CD
-
-The project is designed to run in Jenkins or GitHub Actions:
-
-```text
-Git push
-   ↓
-CI trigger
-   ↓
-npm ci
-   ↓
-Playwright tests
-   ↓
-HTML report
-   ↓
-Pass / Fail
 ```
 
 ## QA approach
