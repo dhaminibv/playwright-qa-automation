@@ -1,0 +1,9 @@
+
+{
+    "firstname": "Dhamini",
+    "lastname": "BV",
+    "totalprice": 3632,
+    "depositpaid": true,
+    "bookingdates": { "checkin": "2026-08-21", "checkout": "2026-08-26" },
+    "additionalneeds":"dham"
+}

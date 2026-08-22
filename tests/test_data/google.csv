@@ -1,0 +1,21 @@
+id,searchText,category,expectedKeyword,language
+1,Playwright automation,Testing,Playwright,English
+2,Selenium WebDriver,Testing,Selenium,English
+3,Java tutorial,Programming,Java,English
+4,Python tutorial,Programming,Python,English
+5,JavaScript tutorial,Programming,JavaScript,English
+6,TypeScript tutorial,Programming,TypeScript,English
+7,API testing tools,Testing,API,English
+8,Postman API testing,Testing,Postman,English
+9,AWS certification,Cloud,AWS,English
+10,Docker tutorial,DevOps,Docker,English
+11,Kubernetes tutorial,DevOps,Kubernetes,English
+12,Machine learning courses,AI,Machine Learning,English
+13,Cybersecurity courses,Security,Cybersecurity,English
+14,best places to visit in Berlin,Travel,Berlin,English
+15,restaurants in Frankfurt,Travel,Frankfurt,English
+16,Playwright Automatisierung,Testing,Playwright,German
+17,Java lernen,Programming,Java,German
+18,beste Reiseziele in Deutschland,Travel,Deutschland,German
+19,Testautomatisierung lernen,Testing,Testautomatisierung,German
+20,Wetter in Berlin,Weather,Berlin,German
